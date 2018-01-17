@@ -18,7 +18,7 @@ const configureStore = initalState => {
     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
   )
 
-  const store = createStore(reducer)
+  const store = createStore(reducer, initalState)
   const persistor = persistStore(store)
 
   return { persistor, store }

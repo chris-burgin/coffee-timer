@@ -13,7 +13,16 @@ import { PersistGate } from "redux-persist/es/integration/react"
 import Navigator from "./navigator"
 
 // configure store
-const { persistor, store } = configureStore()
+const { persistor, store } = configureStore({
+  timers: [
+    {
+      name: "Chemex",
+      ratio: 16.67,
+      defaultCoffeeWeight: 30,
+      defaultTimer: true,
+    },
+  ],
+})
 
 class App extends React.Component {
   render() {
