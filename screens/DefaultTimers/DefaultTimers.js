@@ -1,14 +1,18 @@
 import React, { Component } from "react"
-import { Container, Text } from "native-base"
+import { View, Text } from "react-native"
 import { connect } from "react-redux"
+
+import styles from "./DefaultTimers.style"
 
 import GridList from "../../components/GridList/GridList"
 
 class DefaultTimers extends Component {
   _formatTimersForGrid(timers) {
-    return timers.map(({ image, name }) => ({
+    return timers.map(({ id, image, name, description }) => ({
+      id: id,
       image: image,
       title: name,
+      description: description,
     }))
   }
 
@@ -17,10 +21,10 @@ class DefaultTimers extends Component {
     console.log("TIMESR", this._formatTimersForGrid(timers))
 
     return (
-      <Container>
-        <Text> Default Timers </Text>
+      <View style={styles.container}>
+        <Text style={styles.header}> Default Timers </Text>
         <GridList items={this._formatTimersForGrid(timers)} />
-      </Container>
+      </View>
     )
   }
 }

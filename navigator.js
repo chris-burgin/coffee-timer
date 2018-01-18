@@ -15,7 +15,6 @@ const Navigator = StackNavigator({
         Account: { screen: Account },
       },
       {
-        tabBarPosition: "bottom",
         tabBarOptions: {
           style: {},
           activeTintColor: "#007AFF",

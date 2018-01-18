@@ -1,13 +1,13 @@
 import React, { Component } from "react"
 import { View, FlatList } from "react-native"
 
-import styles from "./GridList.style"
+import styles from "./ImageList.style"
 
-import GridListItem from "../GridListItem/GridListItem"
+import ImageListItem from "../ImageListItem/ImageListItem"
 
-class GridList extends Component {
+class ImageList extends Component {
   _keyExtractor = (item, index) => item.id
-  _renderItem = ({ item }) => <GridListItem {...item} />
+  _renderItem = ({ item }) => <ImageListItem {...item} />
 
   render() {
     const { items } = this.props
@@ -24,4 +24,4 @@ class GridList extends Component {
   }
 }
 
-export default GridList
+export default ImageList

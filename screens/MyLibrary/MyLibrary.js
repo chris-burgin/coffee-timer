@@ -1,12 +1,12 @@
 import React, { Component } from "react"
-import { Container, Text } from "native-base"
+import { View, Text } from "react-native"
 
 class MyLibrary extends Component {
   render() {
     return (
-      <Container>
+      <View>
         <Text> My Library </Text>
-      </Container>
+      </View>
     )
   }
 }

@@ -1,9 +1,9 @@
 import React, { Component } from "react"
 import { Image, View, Text } from "react-native"
 
-import styles from "./GridListItem.style"
+import styles from "./ImageListItem.style"
 
-class GridListItem extends Component {
+class ImageListItem extends Component {
   render() {
     const { image, title, description } = this.props
     return (
@@ -21,4 +21,4 @@ class GridListItem extends Component {
   }
 }
 
-export default GridListItem
+export default ImageListItem
