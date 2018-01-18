@@ -5,9 +5,9 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
   header: {
+    marginTop: 15,
     fontSize: 40,
     fontWeight: "800",
-    marginBottom: 10,
   },
 })
 
