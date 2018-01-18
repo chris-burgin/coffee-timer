@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import { View, FlatList } from "react-native"
+import { View, FlatList, ScrollView } from "react-native"
 
 import styles from "./ImageList.style"
 
@@ -13,14 +13,12 @@ class ImageList extends Component {
     const { items } = this.props
 
     return (
-      <View style={styles.container}>
-        <FlatList
-          style={styles.list}
-          data={items}
-          keyExtractor={this._keyExtractor}
-          renderItem={this._renderItem}
-        />
-      </View>
+      <FlatList
+        style={styles.list}
+        data={items}
+        keyExtractor={this._keyExtractor}
+        renderItem={this._renderItem}
+      />
     )
   }
 }

@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import { View, Text } from "react-native"
+import { Text, ScrollView } from "react-native"
 import { connect } from "react-redux"
 
 import styles from "./DefaultTimers.style"
@@ -20,10 +20,10 @@ class DefaultTimers extends Component {
     const { timers } = this.props
 
     return (
-      <View style={styles.container}>
+      <ScrollView style={styles.container}>
         <Text style={styles.header}> Default Timers </Text>
         <ImageList items={this._formatTimers(timers)} />
-      </View>
+      </ScrollView>
     )
   }
 }
