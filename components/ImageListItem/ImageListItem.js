@@ -13,8 +13,8 @@ class ImageListItem extends Component {
           style={styles.image}
         />
         <View style={styles.content}>
-          <Text style={styles.title}> {title} </Text>
-          <Text style={styles.description}> {description}</Text>
+          <Text style={styles.title}>{title}</Text>
+          <Text style={styles.description}>{description}</Text>
         </View>
       </View>
     )
