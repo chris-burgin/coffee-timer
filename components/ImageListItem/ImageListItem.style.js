@@ -6,6 +6,9 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: "row",
     margin: 10,
+    paddingBottom: 20,
+    borderBottomWidth: 1,
+    borderBottomColor: "#BCBBC1",
   },
   image: {
     flex: 1,

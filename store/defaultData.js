@@ -16,6 +16,8 @@ const defaultData = {
       ratio: 16.67,
       defaultCoffeeWeight: 40,
       defaultTimer: true,
+      description:
+        "The Chemex is a great new way to brew coffee. I just need words so I am typeing.",
     },
     {
       id: 2,
@@ -23,6 +25,8 @@ const defaultData = {
       ratio: 16.67,
       defaultCoffeeWeight: 40,
       defaultTimer: true,
+      description:
+        "The Chemex is a great new way to brew coffee. I just need words so I am typeing.",
     },
   ],
 }

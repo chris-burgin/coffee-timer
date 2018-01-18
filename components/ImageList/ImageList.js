@@ -15,6 +15,7 @@ class ImageList extends Component {
     return (
       <View style={styles.container}>
         <FlatList
+          style={styles.list}
           data={items}
           keyExtractor={this._keyExtractor}
           renderItem={this._renderItem}

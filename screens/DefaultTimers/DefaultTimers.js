@@ -4,10 +4,10 @@ import { connect } from "react-redux"
 
 import styles from "./DefaultTimers.style"
 
-import GridList from "../../components/GridList/GridList"
+import ImageList from "../../components/ImageList/ImageList"
 
 class DefaultTimers extends Component {
-  _formatTimersForGrid(timers) {
+  _formatTimers(timers) {
     return timers.map(({ id, image, name, description }) => ({
       id: id,
       image: image,
@@ -18,12 +18,11 @@ class DefaultTimers extends Component {
 
   render() {
     const { timers } = this.props
-    console.log("TIMESR", this._formatTimersForGrid(timers))
 
     return (
       <View style={styles.container}>
         <Text style={styles.header}> Default Timers </Text>
-        <GridList items={this._formatTimersForGrid(timers)} />
+        <ImageList items={this._formatTimers(timers)} />
       </View>
     )
   }
