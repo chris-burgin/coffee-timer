@@ -1,12 +1,12 @@
 import React, { Component } from "react"
-import { View, Text } from "react-native"
+import { Container, Text } from "native-base"
 
 class Account extends Component {
   render() {
     return (
-      <View>
+      <Container>
         <Text> Account </Text>
-      </View>
+      </Container>
     )
   }
 }

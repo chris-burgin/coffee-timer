@@ -1,14 +1,15 @@
 import React, { Component } from "react"
 import { Container, Text } from "native-base"
 
-class MyLibrary extends Component {
+class GridListItem extends Component {
   render() {
+    const { image, title } = this.props
     return (
       <Container>
-        <Text> My Library </Text>
+        <Text> {title} </Text>
       </Container>
     )
   }
 }
 
-export default MyLibrary
+export default GridListItem
