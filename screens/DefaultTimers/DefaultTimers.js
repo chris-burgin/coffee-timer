@@ -7,22 +7,13 @@ import styles from "./DefaultTimers.style"
 import ImageList from "../../components/ImageList/ImageList"
 
 class DefaultTimers extends Component {
-  _formatTimers(timers) {
-    return timers.map(({ id, image, name, description }) => ({
-      id: id,
-      image: image,
-      title: name,
-      description: description,
-    }))
-  }
-
   render() {
     const { timers } = this.props
 
     return (
       <ScrollView style={styles.container}>
         <Text style={styles.header}> Default Timers </Text>
-        <ImageList items={this._formatTimers(timers)} />
+        <ImageList items={timers} />
       </ScrollView>
     )
   }

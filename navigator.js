@@ -10,13 +10,19 @@ const Navigator = StackNavigator({
   App: {
     screen: TabNavigator(
       {
-        DefaultTimers: { screen: DefaultTimers },
+        DefaultTimers: {
+          screen: DefaultTimers,
+        },
         MyLibrary: { screen: MyLibrary },
         Account: { screen: Account },
       },
       {
+        animationEnabled: true,
+        swipeEnabled: true,
         tabBarOptions: {
-          style: {},
+          style: {
+            backgroundColor: "#F8F8F8",
+          },
           activeTintColor: "#007AFF",
         },
       }
